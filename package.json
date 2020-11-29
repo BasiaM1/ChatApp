@@ -1,0 +1,16 @@
+{
+  "name": "ChatApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BasiaM1/ChatApp.git",
+  "author": "BasiaM1 <b.murzynowska@wp.pl>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "global": "^4.4.0",
+    "nodemon": "^2.0.6"
+  }
+}
