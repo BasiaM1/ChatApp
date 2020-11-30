@@ -89,7 +89,10 @@ p {
   color: #999;
   text-align: right;
 }
-
+.message--chat{
+  font-style: italic;
+  
+}
 .message__content {
   background: rgb(68, 68, 68);
   border: none;
