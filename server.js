@@ -34,10 +34,11 @@ io.on('connection', (socket) => {
 
     socket.on('disconnect', () => {
         console.log('Oh, socket ' + socket.id + ' has left');
-        let user = users.filter((user) => user.id === socket.id);
-        let i = users.indexOf(user);
+        let userOut = users.find(user => user.id === socket.id);
+        socket.broadcast.emit('removeUser', userOut);
+        let i = users.indexOf(userOut);
         users.splice(i, 1);
         console.log(users);
-        socket.broadcast.emit('removeUser', user);
+
     });
 });
